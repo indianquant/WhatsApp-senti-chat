@@ -17,7 +17,8 @@ class Person:
       self.character_count = 0
       self.word_count = 0
       self.image_count = 0
-      self.video_count = 0      self.media_count = 0
+      self.video_count = 0      
+      self.media_count = 0
       self.max_message_length = 0 # Count of words
       self.min_message_length = 100 # Count of words
       self.common_words = {}

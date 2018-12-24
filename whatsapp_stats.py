@@ -47,14 +47,14 @@ def bot(filename, stopwords_filename):
 	first_line = chat[0]
 	first_line = first_line.strip()
 	first_line = first_line.lstrip("\xef\xbb\xbf") # Beginning of line chars
-	chat_os = os(first_line)
+	chat_os = os1(first_line)
 	print(chat_os)
 	main(chat)
 
 	print_results()
 
 # Checks which operating system the chat history file is from.
-def os(line):
+def os1(line):
 	osx_pattern = re.compile(r'\d\d\d\d/\d\d/\d\d,')
 	android_pattern = re.compile(r'\d/\d/\d\d')
 	android_pattern2= re.compile(r'\d\d/\d/\d\d')
@@ -101,7 +101,7 @@ def write_file(content):
 def get_array(line):
 
 	if not all(char.isspace() for char in line):
-		os = os(line)
+		os = os1(line)
 			
 		if os == "osx":
 			return line.split(": ")
