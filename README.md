@@ -25,7 +25,7 @@ Contains a list of words that you wish to exclude from the most common words cou
 
 ## Issues
 
-Please raise issues with any difficulties you finf
+Please raise issues with any difficulties you find.
 
 ## Sources 
 
